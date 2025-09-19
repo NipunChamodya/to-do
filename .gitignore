@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+
+# production build folder
+/build
+
+# environment variables (contains secrets!)
+.env
+.env.local
+
+# misc
+.DS_Store
+npm-debug.log
