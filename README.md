@@ -46,15 +46,16 @@ A clean and simple React + Firebase task manager for creating, organizing, and t
    ```bash
    npm install
    ```
-3. **Setup Firebase config** → Create `.env.local` file in project root:
+3. **Setup Firebase config** → Create `firebase.js` file in project root:
 
    ```dotenv
-   VITE_FIREBASE_API_KEY=your_api_key
-   VITE_FIREBASE_AUTH_DOMAIN=yourapp.firebaseapp.com
-   VITE_FIREBASE_PROJECT_ID=your_project_id
-   VITE_FIREBASE_STORAGE_BUCKET=yourapp.appspot.com
-   VITE_FIREBASE_MESSAGING_SENDER_ID=xxxxxxx
-   VITE_FIREBASE_APP_ID=xxxxxxx
+  apiKey: "****",
+  authDomain: "****",
+  projectId: "****",
+  storageBucket: "****",
+  messagingSenderId: "****",
+  appId: "****",
+  measurementId: "****"
    ```
 4. **Run app locally**
 
