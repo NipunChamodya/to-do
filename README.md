@@ -48,7 +48,7 @@ A clean and simple React + Firebase task manager for creating, organizing, and t
    ```
 3. **Setup Firebase config** → Create `firebase.js` file in project root:
 
-   ```dotenv
+  ```dotenv
   apiKey: " ",
   authDomain: " ",
   projectId: " ",
@@ -56,7 +56,7 @@ A clean and simple React + Firebase task manager for creating, organizing, and t
   messagingSenderId: " ",
   appId: " ",
   measurementId: " "
-   ```
+  ```
 4. **Run app locally**
 
    ```bash
