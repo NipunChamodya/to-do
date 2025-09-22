@@ -54,7 +54,7 @@ A clean and simple React + Firebase task manager for creating, organizing, and t
   projectId: " ",
   storageBucket: " ",
   messagingSenderId: " ",
-  appId: "****",
+  appId: " ",
   measurementId: " "
    ```
 4. **Run app locally**
