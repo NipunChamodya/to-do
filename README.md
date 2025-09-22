@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# TO‑DO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean and simple React + Firebase task manager for creating, organizing, and tracking tasks in real time.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+* [Overview](#overview)
+* [Features](#features)
+* [Quickstart](#quickstart)
+* [Project Structure](#project-structure)
+* [Usage](#usage)
+* [Deployment](#deployment)
+* [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Overview
 
-### `npm test`
+**TO‑DO** is a React‑based task management app that provides user authentication, real‑time task updates, and drag‑and‑drop reordering. It is built with Firebase for backend services and React for the user interface.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* User authentication (Firebase Auth)
+* Add, edit, and delete tasks
+* Drag‑and‑drop task reordering
+* Real‑time sync with Firestore
+* Modular UI components (AddTaskModal, Avatar, SortableTaskItem, TaskSkeleton)
+* Basic performance monitoring
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Quickstart
 
-### `npm run eject`
+1. **Clone the repo**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/<your-username>/to-do.git
+   cd to-do
+   ```
+2. **Install dependencies**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
+3. **Setup Firebase config** → Create `.env.local` file in project root:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```dotenv
+   VITE_FIREBASE_API_KEY=your_api_key
+   VITE_FIREBASE_AUTH_DOMAIN=yourapp.firebaseapp.com
+   VITE_FIREBASE_PROJECT_ID=your_project_id
+   VITE_FIREBASE_STORAGE_BUCKET=yourapp.appspot.com
+   VITE_FIREBASE_MESSAGING_SENDER_ID=xxxxxxx
+   VITE_FIREBASE_APP_ID=xxxxxxx
+   ```
+4. **Run app locally**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+to-do/
+├─ public/
+├─ src/
+│  ├─ components/
+│  │  ├─ AddTaskModal.js
+│  │  ├─ Avatar.js
+│  │  ├─ SortableTaskItem.js
+│  │  └─ TaskSkeleton.js
+│  ├─ App.js
+│  ├─ App.css
+│  ├─ App.test.js
+│  ├─ firebase.js
+│  ├─ index.js
+│  ├─ index.css
+│  ├─ logo.svg
+│  ├─ reportWebVitals.js
+│  └─ setupTests.js
+├─ package.json
+└─ README.md
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. Sign in with Firebase Auth (Google or Email/Password). (Soon)
+2. Create a task list and add tasks.
+3. Drag and drop tasks to reorder.
+4. Update task details or delete when done.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Vercel
 
-### Advanced Configuration
+* Push repo to GitHub/GitLab/Bitbucket
+* Import repo into Vercel
+* Add environment variables
+* Deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Firebase Hosting
 
-### Deployment
+```bash
+npm run build
+firebase deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License
